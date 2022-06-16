@@ -164,6 +164,7 @@ const typingHandler = (e) => {
 
     if (!typing) {
         setTyping(true);
+        // console.log(selectedChat._id)
         socket.emit("typing", selectedChat._id);
         }
         let lastTypingTime = new Date().getTime();
@@ -188,8 +189,9 @@ const typingHandler = (e) => {
                         pb={3}
                         px={2}
                         w="100%"
-                        fontFamily="Work sans"
+                        fontFamily="'Lato', sans-serif;"
                         display="flex"
+                        color="#3180C1"
                         justifyContent={{ base: "space-between" }}
                         alignItems="center">
                             <IconButton
@@ -240,7 +242,6 @@ const typingHandler = (e) => {
                                 width={70}
                                 style={{marginBottom:15, marginLeft:0}}
                                 >
-                                
                                 </Lottie>
                                 </div> : <></> }
                             <Input varient="filled" bg="#E0E0E0" placeholder='Enter a message..' onChange={typingHandler} value={newMessage}/>
@@ -250,8 +251,8 @@ const typingHandler = (e) => {
                     </>
                 ) : (
                     <Box display="flex" alignItems="center" justifyContent="center" h="100%">
-                        <Text fontSize="3xl" pb={3} fontFamily="Work sans">
-                            Click on a user to start chatting
+                        <Text fontSize="3xl" pb={3} fontFamily="'Lato', sans-serif;">
+                            Select a chat or user to start chatting
                         </Text>
                     </Box>
                 )

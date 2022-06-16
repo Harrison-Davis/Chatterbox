@@ -143,7 +143,7 @@ const handleSubmit = async () => {
             <ModalContent>
             <ModalHeader
                         fontSize="35px"
-            fontFamily="Work sans"
+            fontFamily="'Lato', sans-serif;"
             display="flex"
             justifyContent="center"
             >Create Group Chat</ModalHeader>
@@ -185,7 +185,6 @@ const handleSubmit = async () => {
                 <Button colorScheme='blue'  onClick={handleSubmit}>
                 Create Chat
                 </Button>
-                <Button variant='ghost'>Secondary Action</Button>
             </ModalFooter>
             </ModalContent>
         </Modal>

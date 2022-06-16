@@ -15,7 +15,8 @@ return (
         bg="white"
         w={{ base: "100%", md: "68%" }}
         borderRadius="lg"
-        borderWidth="1px"
+        borderWidth="4px"
+        borderColor="darkgray"
         >
         <SingleChat fetchAgain={fetchAgain} setFetchAgain={setFetchAgain} />
     </Box>

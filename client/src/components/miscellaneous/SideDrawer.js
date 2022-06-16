@@ -138,7 +138,7 @@ const accessChat = async (userId) => {
                 </Button>
 
             </Tooltip>
-            <Text fontSize="2xl" fontFamily="Space Grotesk">
+            <Text fontSize="3xl" fontFamily="'MuseoModerno', cursive">
                 ChatterBox
             </Text>
             <div>
@@ -169,7 +169,7 @@ const accessChat = async (userId) => {
                     </MenuButton>
                     <MenuList>
                         <ProfileModal user={user}>
-                            {/* <MenuItem>My Profile</MenuItem> */}
+                            <MenuItem>My Profile</MenuItem>
                         </ProfileModal>
                             <MenuDivider></MenuDivider>
                             <MenuItem onClick={logoutHandler}>Logout</MenuItem>

@@ -31,7 +31,7 @@ const Homepage = () => {
             borderRadius="lg"
             borderWidth="1px"
             >
-                <Text fontSize="4xl" fontFamily="Space Grotesk" color="black">ChatterBox</Text>
+                <Text fontSize="4xl" fontFamily="'MuseoModerno', cursive" color="black">ChatterBox</Text>
             </Box>
             <Box bg="white"
             w="100%" 
